@@ -11,7 +11,7 @@
 }
 
 body {
-  background: #d9ff00;
+  background: linear-gradient(to bottom, #ffffff 30px, #d9ff00 30px 100%, #ffffff 100% 5px);
 }
 
 img {
@@ -72,7 +72,6 @@ a {
 }  
 
 .about {
-  height: 100vh;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -80,15 +79,22 @@ a {
   margin-top: 1px;
 }
 
+@media screen and (min-width: 1024px)  {
+  .about {
+    height: 100vh;
+  }
+}
+
 .about .text {
   width: 100%;
   padding: 15vw 8vw;
-  border-right: solid 1px #d9ff00;
+  border-bottom: solid 1px #d9ff00;
 }
 
 @media screen and (min-width: 1024px)  {
   .about .text {
     width: 50%;
+    border-right: solid 1px #d9ff00;
   }
 }
 
@@ -106,9 +112,20 @@ a {
   }
 }
 
+.image {
+  width: 100%;
+}
+
 .image img {
-  height: 100%;
-  width: auto;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 1024px)  {
+  .image img {
+    height: 100%;
+    width: auto;
+  }
 }
 
 .gallery {
